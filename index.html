@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Purchase Confirmation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Please fill out the survey below and press submit when all fields are completed.</h2>
+      <form id="purchase">
+
+        <div class="form-group">
+          <label for="userName">Your Name:</label>
+          <input id="userName" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="userAddress">Your Full Address:</label>
+          <input id="userAddress" class="form-control" type="text">
+        </div>
+
+
+        <div class="form-group">
+          <label>Select Item for Purchase:</label>
+          <div class="row" id="rowContent">
+            <div class="col-md-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="itemSelect" value="cookies">
+                  <img class="img-fluid rounded" src="https://itsabeautifulbite.com/wp-content/uploads/nonas-chocolate-chip-cookies-stacked-on-pedestal-for-tea-750x500.jpg" alt="Picture of our cookies in a stack!"><br>
+                  Chocolate Chip Cookie Stack
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="itemSelect" value="baguette">
+                  <img class="img-fluid rounded" src="https://bit.ly/318wTPO" alt="Picture of our baguette"><br>
+                  Giant French Baguette (model not included)
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="itemSelect" value="creampuff">
+                  <img class="img-fluid rounded" src="https://i.redd.it/m1vc595t4lt01.jpg" alt="A picture of our cream puff"><br>
+                  Cream Puff
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="purhcaseButton">Purchase</button>
+      </form><br>
+      <div id="receipt">
+        <h1>Receipt Information</h1>
+        <p>Thank you for shopping with us, <span class="userName"></span>!</p>
+        <p>We will be shipping your <span class="itemName"></span> as soon as possible to the following address:<br><span class="userAddress"></span></p>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
